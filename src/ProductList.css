@@ -1,0 +1,120 @@
+.product-list-page {
+  min-height: 100vh;
+  background-color: #f4f9f4;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #2e7d32;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-brand {
+  font-size: 1.4rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.cart-count {
+  background-color: #ff6f61;
+  color: white;
+  border-radius: 50%;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.product-list-content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-title {
+  color: #2e7d32;
+  border-bottom: 2px solid #a5d6a7;
+  padding-bottom: 0.5rem;
+  margin-top: 2.5rem;
+}
+
+.plant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.plant-card {
+  background: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.plant-thumb {
+  width: 100%;
+  border-radius: 8px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.plant-desc {
+  font-size: 0.85rem;
+  color: #555;
+  flex-grow: 1;
+}
+
+.plant-price {
+  font-weight: bold;
+  color: #2e7d32;
+  font-size: 1.1rem;
+}
+
+.add-to-cart-btn {
+  padding: 0.6rem 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #43a047;
+}
+
+.add-to-cart-btn:disabled {
+  background-color: #9e9e9e;
+  cursor: not-allowed;
+}
